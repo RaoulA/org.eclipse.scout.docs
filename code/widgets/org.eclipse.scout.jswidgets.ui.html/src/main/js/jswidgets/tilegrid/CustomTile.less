@@ -8,6 +8,13 @@
     transition: transform 200ms ease-out, box-shadow 200ms ease-out, @tile-grid-loading-transition;
   }
 
+  & > .block {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+  }
+
   &.selected {
     #scout.transform(translateY(-10px));
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
