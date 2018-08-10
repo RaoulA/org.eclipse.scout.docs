@@ -69,6 +69,11 @@
               "id": "TileGrid",
               "objectType": "TileGrid",
               "scrollable": true,
+              "gridColumnCount": 5,
+              "layoutConfig": {
+                "columnWidth": 100,
+                "rowHeight": 100
+              },
               "tiles": [
                 {
                   "objectType": "jswidgets.CustomTile",
@@ -117,8 +122,7 @@
       },
       {
         "id": "ConfigurationBox",
-        "objectType": "TabBox",
-        "cssClass": "jswidgets-configuration",
+        "objectType": "jswidgets.ConfigurationBox",
         "selectedTab": "PropertiesTab",
         "tabItems": [
           {

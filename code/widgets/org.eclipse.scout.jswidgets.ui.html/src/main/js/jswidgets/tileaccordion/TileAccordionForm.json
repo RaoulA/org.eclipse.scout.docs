@@ -113,8 +113,7 @@
       },
       {
         "id": "ConfigurationBox",
-        "objectType": "TabBox",
-        "cssClass": "jswidgets-configuration",
+        "objectType": "jswidgets.ConfigurationBox",
         "selectedTab": "PropertiesTab",
         "tabItems": [
           {

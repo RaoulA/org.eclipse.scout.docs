@@ -16,6 +16,7 @@
   __include("jswidgets/button/ButtonForm.js");
   __include("jswidgets/button/ButtonDisplayStyleLookupCall.js");
   __include("jswidgets/carousel/CarouselForm.js");
+  __include("jswidgets/common/ConfigurationBox.js");
   __include("jswidgets/common/EventsTab.js");
   __include("jswidgets/common/FormFieldLookupCall.js");
   __include("jswidgets/common/IconIdLookupCall.js");

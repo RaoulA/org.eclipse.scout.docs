@@ -2,6 +2,7 @@
   color: white;
   background-color: @palette-blue-3;
   padding: @tile-padding-y + 1px @tile-padding-x + 1px;
+  overflow: hidden;
 
   .tile-grid > & {
     /* TileGrid.less already defines a transition for tiles -> override by defining a more specific rule */
@@ -10,9 +11,11 @@
 
   & > .block {
     margin-top: 10px;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 10px;
     display: inline-block;
+    background-color: @palette-blue-6;
+    border-left: 1px solid @palette-blue-3;
   }
 
   &.selected {
@@ -48,4 +51,8 @@
   /* Simple tiles have a shadow when selected. To make sure the shadow is always completely visible
      a padding is added to the tile grid. */
   padding: 10px;
+
+  &.scrollable {
+    padding: 15px;
+  }
 }

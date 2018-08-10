@@ -8,16 +8,18 @@ scout.inherits(jswidgets.CustomTile, scout.Tile);
 jswidgets.CustomTile.prototype._render = function() {
   this.$container = this.$parent.appendDiv('custom-tile');
   this.$text = this.$container.appendDiv();
-  this.$container.appendDiv('block').text('1');
-  this.$container.appendDiv('block').text('2');
-  this.$container.appendDiv('block').text('3');
-  this.$container.appendDiv('block').text('4');
-  this.$container.appendDiv('block').text('5');
-  this.$container.appendDiv('block').text('6');
-  this.$container.appendDiv('block').text('7');
-  this.$container.appendDiv('block').text('8');
-  this.$container.appendDiv('block').text('9');
-  this.$container.appendDiv('block').text('10');
+  this.$container.appendDiv('block');
+  this.$container.appendDiv('block');
+  this.$container.appendDiv('block');
+  this.$container.appendDiv('block');
+  this.$container.appendDiv('block');
+  this.$container.appendDiv('block');
+  this.$container.appendDiv('block');
+  this.$container.appendDiv('block');
+  this.$container.appendDiv('block');
+  this.$container.appendDiv('block');
+  this.$container.appendDiv('block');
+  this.$container.appendDiv('block');
   this.htmlComp = scout.HtmlComponent.install(this.$container, this.session);
 };
 
