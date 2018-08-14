@@ -168,6 +168,16 @@
                     "labelVisible": false
                   },
                   {
+                    "id": "VirtualField",
+                    "objectType": "CheckBoxField",
+                    "label": "Virtual",
+                    "labelVisible": false,
+                    "tooltipText": "${textKey:TileGridVirtualTooltip}",
+                    "gridDataHints": {
+                      "fillHorizontal": false
+                    }
+                  },
+                  {
                     "id": "GridColumnCountField",
                     "objectType": "NumberField",
                     "label": "Grid Column Count"

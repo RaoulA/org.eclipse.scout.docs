@@ -42,6 +42,10 @@ jswidgets.TileGridForm.prototype._init = function(model) {
   withPlaceholdersField.setValue(this.tileGrid.withPlaceholders);
   withPlaceholdersField.on('propertyChange', this._onWithPlacehodersPropertyChange.bind(this));
 
+  var virtualField = this.widget('VirtualField');
+  virtualField.setValue(this.tileGrid.virtual);
+  virtualField.on('propertyChange', this._onVirtualPropertyChange.bind(this));
+
   var colorSchemeField = this.widget('ColorSchemeField');
   colorSchemeField.setValue(this.tileGrid.tiles[0].colorScheme.scheme);
   colorSchemeField.on('propertyChange', this._onColorSchemePropertyChange.bind(this));
@@ -125,6 +129,12 @@ jswidgets.TileGridForm.prototype._onLogicalGridChange = function(event) {
 jswidgets.TileGridForm.prototype._onWithPlacehodersPropertyChange = function(event) {
   if (event.propertyName === 'value') {
     this.tileGrid.setWithPlaceholders(event.newValue);
+  }
+};
+
+jswidgets.TileGridForm.prototype._onVirtualPropertyChange = function(event) {
+  if (event.propertyName === 'value') {
+    this.tileGrid.setVirtual(event.newValue);
   }
 };
 
