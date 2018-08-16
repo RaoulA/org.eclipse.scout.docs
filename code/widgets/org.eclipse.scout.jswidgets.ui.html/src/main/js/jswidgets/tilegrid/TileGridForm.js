@@ -183,18 +183,23 @@ jswidgets.TileGridForm.prototype._onInsertMenuAction = function(event) {
   this.tileGrid.insertTile(tile);
 };
 
-jswidgets.TileGridForm.prototype._createTile = function() {
+jswidgets.TileGridForm.prototype._createTile = function(model) {
+  var defaults;
   var tileType = this.widget('TileTypeField').value;
   if (tileType === 'default') {
-    return  new scout.create('HtmlTile', {
+    defaults = {
       parent: this.tileGrid,
       content: 'New <i>Html Tile</i> ' + this.insertedTileCount++
-    });
+    };
+    model = $.extend({}, defaults, model);
+    return  new scout.create('HtmlTile', model);
   }
-  return new scout.create('jswidgets.CustomTile', {
+  defaults = {
     parent: this.tileGrid,
-    label: 'New Custom Tile ' + this.insertedTileCount++
-  });
+    label: 'New Tile ' + this.insertedTileCount++
+  };
+  model = $.extend({}, defaults, model);
+  return new scout.create('jswidgets.CustomTile', model);
 };
 
 jswidgets.TileGridForm.prototype._onInsertManyMenuAction = function(event) {

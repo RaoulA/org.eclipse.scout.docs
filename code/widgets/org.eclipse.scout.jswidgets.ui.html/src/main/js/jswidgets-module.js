@@ -105,6 +105,7 @@
   __include("jswidgets/tilegrid/TileGridForm.js");
   __include("jswidgets/tilegrid/TileGridLayoutConfigBox.js");
   __include("jswidgets/tilegrid/TileTypeLookupCall.js");
+  __include("jswidgets/tilegrid/VirtualTileGridForm.js");
   __include("jswidgets/tileaccordion/TileAccordionForm.js");
   __include("jswidgets/tileaccordion/GroupLookupCall.js");
   __include("jswidgets/table/CheckableStyleLookupCall.js");
